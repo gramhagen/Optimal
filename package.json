@@ -1,0 +1,12 @@
+{
+  "name": "optimal",
+  "private": true,
+  "scripts": {
+    "lint:html": "eslint \"**/*.html\" --no-error-on-unmatched-pattern"
+  },
+  "devDependencies": {
+    "@html-eslint/eslint-plugin": "^0.43.0",
+    "@html-eslint/parser": "^0.43.0",
+    "eslint": "^8.57.1"
+  }
+}

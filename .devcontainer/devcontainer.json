@@ -6,7 +6,7 @@
       "version": "lts"
     }
   },
-  "postCreateCommand": "npm install --global http-server",
+  "postCreateCommand": "npm install --global http-server && npm install",
   "forwardPorts": [
     8000
   ],
@@ -26,6 +26,10 @@
       "settings": {
         "files.eol": "\n",
         "editor.formatOnSave": true,
+        "eslint.validate": [
+          "javascript",
+          "html"
+        ],
         "liveServer.settings.port": 8000,
         "liveServer.settings.NoBrowser": true
       }
