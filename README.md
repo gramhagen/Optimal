@@ -55,3 +55,19 @@ From the repository root:
 npm install
 npm run lint:html
 ```
+
+---
+
+## GitHub Pages deployment
+
+The site is automatically deployed to GitHub Pages on every push to `main` via the
+[`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) workflow.
+
+### One-time repository setup
+
+1. Go to **Settings → Pages** in the repository.
+2. Under **Source**, select **GitHub Actions**.
+3. Save. The next push to `main` will publish the site.
+
+The live URL will be `https://<owner>.github.io/<repo>/` once the first deployment
+succeeds (visible in the *github-pages* environment on the Actions tab).
