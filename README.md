@@ -1,5 +1,31 @@
 # Optimal
 
+## Game – Startup Clicker
+
+A minimal cookie-clicker-style game built with [Phaser 3](https://phaser.io/).
+
+**Concept:** You are a data scientist at an early-stage startup trying to find market fit.
+You start with an angel investment and must keep the team productive by buying coffee.
+Without coffee, the team's ROI decays; if the budget reaches zero, the startup fails.
+
+### How to play
+
+| Action | Effect |
+|---|---|
+| Click **☕ Buy Coffee** (or press `Space`) | Costs $500 · boosts team ROI by +3 %/s |
+| Do nothing | ROI decays −0.1 %/s until it turns negative |
+| ROI > 0 | Budget grows each second |
+| ROI < 0 | Budget shrinks each second |
+| Budget = $0 | **Game Over** — click *Try Again* to restart |
+
+The chart at the bottom shows your budget history in real time.
+
+### Run locally
+
+Open `index.html` directly in a browser, **or** serve it with `http-server` (see below).
+
+---
+
 ## Devcontainer (GitHub Codespaces)
 
 This repository includes a Codespaces-ready devcontainer for static Phaser 3 web game development.
